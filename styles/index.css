@@ -1,6 +1,50 @@
 body{
 	font-family: sans-serif;
 }
+
 li {
 	text-decoration: underline;
+	cursor: help;
+	position: relative;
+}
+.tooltip-html, .tooltip-css, .tooltip-script {
+	width: 400px;
+	height: 200px;
+	background-color: #ffffff;
+	text-align: justify;
+}
+.tooltip-html {
+
+	position: absolute;
+	margin-left: 90px;
+	margin-top: -40px;
+	text-decoration: none;
+	display: none ;
+}
+.tooltip-css {
+
+	position: absolute;
+	margin-left: 90px;
+	margin-top: -40px;
+	text-decoration: none;
+	display: none ;
+}
+.tooltip-script {
+
+	position: absolute;
+	margin-left: 90px;
+	margin-top: -38px;
+	text-decoration: none;
+	display: none;
+}
+
+li:hover .tooltip-html{
+	display: block;
+}
+
+li:hover .tooltip-css{
+	display: block;
+}
+li:hover .tooltip-script{
+	display: block;
 }
